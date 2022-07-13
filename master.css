@@ -1,0 +1,356 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --amazon-blue: #232f3e;
+  --amazon-yellow: #ffd814;
+  --background-color: #D5DBDB;
+  --font-color: #0F1111;
+  --amazon-orange: #f8b868;
+  --font-color-grey: #dee0e4;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Oxygen";
+}
+
+body {
+  background-color: var(--background-color);
+  width: 100%;
+  height: 100%;
+}
+
+header .nav-logobar {
+  width: 100%;
+  height: 100%;
+  background-color: var(--amazon-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu-left {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+
+
+.nav-menu-hamburger {
+  display: block;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/new-nav-sprite-global-2x_blueheaven-account._CB658093420_.png");
+  background-position: -20px -378px;
+  background-size: 275px;
+  width: 20px;
+  height: 20px;
+  margin: 15px;
+  padding: 5px;
+}
+
+.nav-menu-logo {
+  display: block;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/new-nav-sprite-global-2x_blueheaven-account._CB658093420_.png");
+  background-size: 275px;
+  background-position: -10px -50px;
+  width: 80px;
+  height: 27px;
+}
+
+
+.nav-menu-right {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-right: 15px;
+  padding: 5px;
+}
+
+.nav-menu-right .nav-menu-identify {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.identify-text {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: "Oxygen", sans-serif;
+  vertical-align: bottom;
+}
+
+.nav-menu-right .identify-logo {
+  display: block;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/new-nav-sprite-global-2x_blueheaven-account._CB658093420_.png");
+  background-size: 275px;
+  background-position: -141px -300px;
+  width: 35px;
+  height: 27px;
+}
+
+.nav-menu-cart {
+  display: block;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/new-nav-sprite-global-2x_blueheaven-account._CB658093420_.png");
+  background-size: 275px;
+  background-position: -10px -240px;
+  width: 37px;
+  height: 27px;
+}
+
+.nav-cart-count {
+  color: #f90;
+  line-height: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 0 0 0 17px;
+}
+
+/* Search Bar */
+
+.nav-searchbar {
+  background-color: var(--amazon-blue);
+  width: auto;
+  height: 50px;
+
+}
+
+.nav-searchbar-div_input {
+  width: 75%;
+  min-width: 300px;
+  max-width: auto;
+  height: 44px;
+  border-radius: 8px;
+  background-color: white;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-searchbar-div_input input {
+  border: none;
+  width: 90%;
+  min-width: 280px;
+  height: 35px;
+  margin:0 auto;
+  padding: 3px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #eee;
+}
+
+.nav-searchbar-lookicon {
+  position: absolute;
+  right: 1px;
+  width: 50px;
+  height: 44px;
+  margin: 5px;
+  border-radius: 8px;
+  background-color: var(--amazon-orange);
+}
+
+.nav-searchbar-lookicon i {
+  display: block;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/new-nav-sprite-global-2x_blueheaven-account._CB658093420_.png");
+  background-size: 275px;
+  background-position: -73px -239px;
+  width: 27px;
+  height: 25px;
+  margin: 10px;
+}
+
+/* Menu Bar  */
+
+.nav-menu {
+  background-color: var(--amazon-blue);
+  width: 100%;
+  height: 100%;
+}
+
+.nav-menu ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 10px;
+  overflow-x: scroll;
+
+}
+.nav-menu li{
+  display: flex;
+  flex-flow: row nowrap;
+}
+.nav-menu a {
+  display: ;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 15px;
+  margin: 0 10px;
+}
+
+
+/* Location */
+
+.nav-location {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #37475a;
+  width: 100%;
+  height: auto;
+}
+
+.nav-location-icon {
+  display: inline-block;
+  background-position: -75px -340px;
+  width: 20px;
+  height: 20px;
+  background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/new-nav-sprite-global-2x_blueheaven-account._CB658093420_.png");
+  background-size: 275px;
+  margin-left: 10px;
+}
+
+.nav-location-text {
+  color: var(--font-color-grey);
+  font-weight:600;
+  font-size: 13px;
+  padding: 15px;
+}
+
+/* Main Page */
+
+/* Iniciate Sesion */
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: inherit;
+}
+
+.main-newsesion {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-newsesion span {
+  color: var(--font-color-grey);
+  font-size: 1.8rem;
+  margin: 0 auto;
+  text-align: left;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+
+.main-newsesion button {
+  width: 290px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--amazon-yellow);
+  font-size: 1.6rem;
+  color: #0F1111;
+  font-family: "Oxygen";
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+.main-newsesion a {
+  font-family: "Oxygen";
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: lighter;
+  color: lightblue;
+}
+
+.main-ad-image {
+  display: inline-block;
+  background-image: url("https://m.media-amazon.com/images/I/61kozdhcVNL._SX1500_.jpg");
+  background-position: -462px -5px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+/* Carrusell */
+.main-carrusell {
+  position: relative;
+  top: -10px;
+  display:grid;
+  grid-template-columns: repeat(6, 150px);
+  overflow: hidden;
+  overflow-x: scroll;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  /* background: rgb(251,185,161);
+  background: linear-gradient(180deg, rgba(251,185,161,1) 0%, rgba(255,255,255,1) 15%); */
+  padding-left: 5px;
+}
+
+.main-carrusell-item {
+  width: 135px;
+  height: 180px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0 0 1px 1px grey;
+  text-align: left;
+  color: #b5b5b5;
+  font-size: 1.2rem;
+}
+
+.main-carrusell-item img {
+  width: 100%;
+}
+
+/* Footer */
+
+footer .footer-index {
+  background-color: #37475a;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  text-align: center;
+}
+
+footer .footer-index:hover {
+  background-color: #37475ad1;
+}
+
+footer .footer-index a {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: "Oxygen";
+}
+
+footer .footer-menu {
+  padding-top: 15px;
+  background: var(--amazon-blue);
+  display: flex;
+ justify-content: space-evenly;
+}
+
+footer .footer-menu li, a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  line-height: 50px;
+
+}
